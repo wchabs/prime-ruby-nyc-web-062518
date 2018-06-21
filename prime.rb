@@ -9,7 +9,7 @@ def prime?(integer)
   divisors_array = (2..divisors).to_a
   
   divisors_array.each do |divisor|
-    if integer%divisor != 0
+    if integer%divisor == 0
       return false
     end
   end
