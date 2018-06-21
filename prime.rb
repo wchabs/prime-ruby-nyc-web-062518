@@ -15,5 +15,10 @@ def prime?(integer)
   end
   
   return true
+  
+  #A minor change to slightly optimize would be to check if the integer is greater
+  #than 2 and last digit is even. Return false and only odd numbers would be tested.
+  #Now that even integers are elminated then then the divisor population can also
+  #elminate even divisors - divisors will only be odd between 3 and integer.
 
 end
